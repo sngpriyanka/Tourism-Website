@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yatra Nepal - Discover the beauty of Nepal, from Himalayas to Terai">
+    <title>Yatra Nepal | नेपाल भ्रमण</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="mandala-loader"></div>
+            <div class="loader-text">यात्रा नेपाल</div>
+            <div class="loader-sub">Loading your journey...</div>
+        </div>
+    </div>
+
+    <!-- Prayer Flag Ribbon -->
+    <div class="prayer-flags">
+        <span class="flag blue"></span><span class="flag white"></span><span class="flag red"></span><span class="flag green"></span><span class="flag yellow"></span>
+        <span class="flag blue"></span><span class="flag white"></span><span class="flag red"></span><span class="flag green"></span><span class="flag yellow"></span>
+        <span class="flag blue"></span><span class="flag white"></span><span class="flag red"></span><span class="flag green"></span><span class="flag yellow"></span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 50" width="32" height="40">
+                        <polygon points="0,50 20,0 20,30 40,20 40,50" fill="#C0392B"/>
+                        <polygon points="0,50 20,15 20,38 40,30 40,50" fill="#1a237e"/>
+                        <circle cx="14" cy="22" r="4" fill="#fff"/>
+                        <path d="M10,38 Q14,32 18,38" fill="none" stroke="#fff" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Yatra<span>Nepal</span></span>
+                    <span class="logo-nepali">यात्रा नेपाल</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="nav-cta"><i class="fa-solid fa-suitcase-rolling"></i> Book Yatra</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-namaste">
+                    <i class="fa-solid fa-hands-praying"></i> नमस्ते! Welcome to Nepal
+                </div>
+                <h1>Experience the Soul of the <span>Himalayas</span></h1>
+                <p>From the roof of the world to ancient temples, lush jungles to serene lakes — Nepal is not just a destination, it's a feeling. Begin your Yatra today.</p>
+                <div class="hero-buttons">
+                    <a href="destinations.html" class="btn btn-primary">
+                        Start Your Yatra <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="about.html" class="btn btn-outline">
+                        <i class="fa-solid fa-play"></i> Our Story
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <h3><span class="counter" data-target="75">0</span>+</h3>
+                        <p>Destinations</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3><span class="counter" data-target="8">0</span></h3>
+                        <p>UNESCO Sites</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3><span class="counter" data-target="10">0</span>K+</h3>
+                        <p>Happy Yatris</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3><span class="counter" data-target="125">0</span>+</h3>
+                        <p>Ethnic Groups</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>DISCOVER</span>
+            <div class="scroll-line"></div>
+        </div>
+        <div class="mountain-silhouette">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,120 L0,80 L120,40 L200,65 L320,20 L400,55 L480,10 L560,45 L640,5 L720,50 L800,15 L880,40 L960,25 L1040,55 L1120,30 L1200,60 L1320,20 L1440,70 L1440,120 Z" fill="#fff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-text reveal">
+                    <span class="section-tag"><i class="fa-solid fa-om"></i> Why Nepal?</span>
+                    <h2 class="section-title">A Land Where Gods Still Walk Among Us</h2>
+                    <p>Nepal — birthplace of Lord Buddha, home to the mighty Everest, and a living museum of ancient cultures. Every cobblestone in Kathmandu, every prayer flag in the mountains, and every smile from the locals tells a story thousands of years old.</p>
+                    <p>With 8 of the world's 14 highest peaks, over 6,000 rivers, dense subtropical jungles hiding Bengal tigers, and medieval city squares frozen in time — Nepal offers more diversity per square mile than anywhere else on Earth.</p>
+                    <div class="intro-features">
+                        <div class="intro-feat">
+                            <i class="fa-solid fa-mountain-sun feat-icon"></i>
+                            <div>
+                                <h4>8 of World's Tallest</h4>
+                                <p>Including Mt. Everest (8,848m)</p>
+                            </div>
+                        </div>
+                        <div class="intro-feat">
+                            <i class="fa-solid fa-place-of-worship feat-icon"></i>
+                            <div>
+                                <h4>8 UNESCO Sites</h4>
+                                <p>Cultural & Natural Heritage</p>
+                            </div>
+                        </div>
+                        <div class="intro-feat">
+                            <i class="fa-solid fa-paw feat-icon"></i>
+                            <div>
+                                <h4>Rich Wildlife</h4>
+                                <p>Tigers, Rhinos, Red Pandas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-images reveal">
+                    <div class="intro-img-main">
+                        <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=500&q=80" alt="Boudhanath Stupa Kathmandu">
+                    </div>
+                    <div class="intro-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=300&q=80" alt="Nepali prayer flags mountains">
+                    </div>
+                    <div class="intro-float-card">
+                        <div class="float-card-inner">
+                            <i class="fa-solid fa-hands-praying"></i>
+                            <h4>अतिथि देवो भव</h4>
+                            <p>"Guest is God"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="destinations-section" id="destinations">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> Top Destinations</span>
+                <h2 class="section-title">Discover Nepal's Hidden Gems</h2>
+                <p class="section-desc">From ancient kingdoms to Himalayan trails — each destination offers a unique chapter of Nepal's story</p>
+            </div>
+            <div class="dest-grid">
+                <!-- Card 1: Kathmandu -->
+                <div class="dest-card reveal">
+                    <div class="dest-card-img">
+                        <img src="https://images.unsplash.com/photo-1558799401-1dcba79834c2?w=600&q=80" alt="Kathmandu Durbar Square" loading="lazy">
+                        <span class="dest-badge"><i class="fa-solid fa-landmark"></i> Heritage</span>
+                        <button class="dest-wishlist" data-id="ktm" aria-label="Save"><i class="fa-regular fa-heart"></i></button>
+                        <div class="dest-card-overlay">
+                            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="dest-card-body">
+                        <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Bagmati Province</div>
+                        <h3>Kathmandu Valley</h3>
+                        <p>Explore ancient Durbar Squares, Swayambhunath Stupa, Pashupatinath Temple, and the vibrant streets of Thamel.</p>
+                        <div class="dest-meta">
+                            <div class="dest-rating">
+                                <div class="star-group">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>4.8 (2.1k)</span>
+                            </div>
+                            <div class="dest-price">$65 <small>/person</small></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2: Pokhara -->
+                <div class="dest-card reveal">
+                    <div class="dest-card-img">
+                        <img src="https://images.unsplash.com/photo-1647346152940-6902cdf9e875?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9raGFyYSUyMGxha2VzaWRlfGVufDB8fDB8fHww" alt="Pokhara Phewa Lake" loading="lazy">
+                        <span class="dest-badge trending"><i class="fa-solid fa-fire"></i> Trending</span>
+                        <button class="dest-wishlist" data-id="pkr" aria-label="Save"><i class="fa-regular fa-heart"></i></button>
+                        <div class="dest-card-overlay">
+                            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="dest-card-body">
+                        <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Gandaki Province</div>
+                        <h3>Pokhara Lakeside</h3>
+                        <p>The gateway to Annapurna. Enjoy Phewa Lake, Davis Falls, World Peace Pagoda, and paragliding adventures.</p>
+                        <div class="dest-meta">
+                            <div class="dest-rating">
+                                <div class="star-group">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>4.9 (3.4k)</span>
+                            </div>
+                            <div class="dest-price">$90 <small>/person</small></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Chitwan -->
+                <div class="dest-card reveal">
+                    <div class="dest-card-img">
+                        <img src="https://images.unsplash.com/photo-1549888668-19281758dfbe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpdHdhbiUyMG5hdGlvbmFsJTIwcGFya3xlbnwwfHwwfHx8MA%3D%3D" alt="Chitwan National Park" loading="lazy">
+                        <span class="dest-badge wildlife"><i class="fa-solid fa-paw"></i> Wildlife</span>
+                        <button class="dest-wishlist" data-id="ctw" aria-label="Save"><i class="fa-regular fa-heart"></i></button>
+                        <div class="dest-card-overlay">
+                            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="dest-card-body">
+                        <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Narayani Zone</div>
+                        <h3>Chitwan National Park</h3>
+                        <p>UNESCO World Heritage jungle. Spot one-horned rhinos, Bengal tigers, and experience Tharu cultural programs.</p>
+                        <div class="dest-meta">
+                            <div class="dest-rating">
+                                <div class="star-group">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <span>4.7 (1.8k)</span>
+                            </div>
+                            <div class="dest-price">$115 <small>/person</small></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4: Lumbini -->
+                <div class="dest-card reveal">
+                    <div class="dest-card-img">
+                        <img src="https://images.unsplash.com/photo-1616166831462-48a3e9089c20?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHVtYmluaXxlbnwwfHwwfHx8MA%3D%3D" alt="Lumbini birthplace of Buddha" loading="lazy">
+                        <span class="dest-badge spiritual"><i class="fa-solid fa-dharmachakra"></i> Spiritual</span>
+                        <button class="dest-wishlist" data-id="lmb" aria-label="Save"><i class="fa-regular fa-heart"></i></button>
+                        <div class="dest-card-overlay">
+                            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="dest-card-body">
+                        <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Lumbini Province</div>
+                        <h3>Lumbini — Buddha's Birthplace</h3>
+                        <p>The sacred birthplace of Lord Buddha. Visit Maya Devi Temple, Ashoka Pillar, and monasteries from 30+ countries.</p>
+                        <div class="dest-meta">
+                            <div class="dest-rating">
+                                <div class="star-group">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>4.9 (2.6k)</span>
+                            </div>
+                            <div class="dest-price">$55 <small>/person</small></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5: Everest -->
+                <div class="dest-card reveal">
+                    <div class="dest-card-img">
+                        <img src="https://images.unsplash.com/photo-1486911278844-a81c5267e227?w=600&q=80" alt="Everest Base Camp trek" loading="lazy">
+                        <span class="dest-badge adventure"><i class="fa-solid fa-person-hiking"></i> Trek</span>
+                        <button class="dest-wishlist" data-id="ebc" aria-label="Save"><i class="fa-regular fa-heart"></i></button>
+                        <div class="dest-card-overlay">
+                            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="dest-card-body">
+                        <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Solukhumbu</div>
+                        <h3>Everest Base Camp Trek</h3>
+                        <p>Walk to the base of the world's highest peak. Experience Sherpa culture, Namche Bazaar, and breathtaking vistas.</p>
+                        <div class="dest-meta">
+                            <div class="dest-rating">
+                                <div class="star-group">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>4.9 (4.2k)</span>
+                            </div>
+                            <div class="dest-price">$490 <small>/person</small></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6: Bhaktapur -->
+                <div class="dest-card reveal">
+                    <div class="dest-card-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1661963629241-52c812d5c7f8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bhaktapur ancient city" loading="lazy">
+                        <span class="dest-badge"><i class="fa-solid fa-landmark"></i> Heritage</span>
+                        <button class="dest-wishlist" data-id="bkt" aria-label="Save"><i class="fa-regular fa-heart"></i></button>
+                        <div class="dest-card-overlay">
+                            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="dest-card-body">
+                        <div class="dest-location"><i class="fa-solid fa-location-dot"></i> Bagmati Province</div>
+                        <h3>Bhaktapur — Living Museum</h3>
+                        <p>Step back in time in this medieval Newari city. 55-Window Palace, Nyatapola Temple, and the famous Juju Dhau.</p>
+                        <div class="dest-meta">
+                            <div class="dest-rating">
+                                <div class="star-group">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>4.8 (1.5k)</span>
+                            </div>
+                            <div class="dest-price">$42 <small>/person</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta reveal">
+                <a href="destinations.html" class="btn btn-dark">View All Destinations <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences -->
+    <section class="experiences-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fa-solid fa-masks-theater"></i> What We Offer</span>
+                <h2 class="section-title">Authentic Nepali Experiences</h2>
+                <p class="section-desc">Immerse yourself in the diverse culture, nature, and adventure that Nepal has to offer</p>
+            </div>
+            <div class="exp-grid">
+                <div class="exp-card reveal">
+                    <div class="exp-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+                    <h4>Himalayan Trekking</h4>
+                    <p>Everest, Annapurna, Langtang, Manaslu — trek through the most spectacular mountain trails on the planet.</p>
+                </div>
+                <div class="exp-card reveal">
+                    <div class="exp-icon"><i class="fa-solid fa-place-of-worship"></i></div>
+                    <h4>Temple & Heritage Tours</h4>
+                    <p>Explore UNESCO sites, ancient pagodas, sacred stupas, and living goddess Kumari traditions.</p>
+                </div>
+                <div class="exp-card reveal">
+                    <div class="exp-icon"><i class="fa-solid fa-binoculars"></i></div>
+                    <h4>Jungle Safari</h4>
+                    <p>Spot rhinos, tigers, and exotic birds in Chitwan and Bardia National Parks with expert naturalists.</p>
+                </div>
+                <div class="exp-card reveal">
+                    <div class="exp-icon"><i class="fa-solid fa-parachute-box"></i></div>
+                    <h4>Adventure Sports</h4>
+                    <p>Paragliding in Pokhara, bungee jumping, white-water rafting, and mountain biking adventures.</p>
+                </div>
+                <div class="exp-card reveal">
+                    <div class="exp-icon"><i class="fa-solid fa-spa"></i></div>
+                    <h4>Yoga & Meditation</h4>
+                    <p>Find inner peace with retreats in Himalayan monasteries and ancient meditation centers.</p>
+                </div>
+                <div class="exp-card reveal">
+                    <div class="exp-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h4>Culinary Journey</h4>
+                    <p>Taste dal bhat, momos, sel roti, Newari feasts, and learn cooking from local families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tours -->
+    <section class="tours-section" id="tours">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fa-solid fa-route"></i> Popular Yatras</span>
+                <h2 class="section-title">Best Selling Tour Packages</h2>
+                <p class="section-desc">Handcrafted itineraries designed by local experts who know Nepal inside out</p>
+            </div>
+            <div class="tour-tabs reveal">
+                <button class="tour-tab active" data-filter="all">All</button>
+                <button class="tour-tab" data-filter="trekking">Trekking</button>
+                <button class="tour-tab" data-filter="heritage">Heritage</button>
+                <button class="tour-tab" data-filter="adventure">Adventure</button>
+                <button class="tour-tab" data-filter="spiritual">Spiritual</button>
+            </div>
+            <div class="tours-grid" id="toursGrid">
+                <div class="tour-card reveal" data-category="trekking">
+                    <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1486911278844-a81c5267e227?w=400&q=80" alt="Everest Base Camp" loading="lazy"></div>
+                    <div class="tour-card-body">
+                        <span class="tour-duration"><i class="fa-regular fa-calendar-days"></i> 14 Days</span>
+                        <h3>Everest Base Camp Trek</h3>
+                        <div class="tour-features">
+                            <span class="tour-feature"><i class="fa-solid fa-person-hiking"></i> Trekking</span>
+                            <span class="tour-feature"><i class="fa-solid fa-mountain"></i> 5,364m</span>
+                            <span class="tour-feature"><i class="fa-solid fa-camera"></i> Scenic</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">$490 <small>/person</small></div>
+                            <a href="booking.html" class="tour-book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card reveal" data-category="heritage">
+                    <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1558799401-1dcba79834c2?w=400&q=80" alt="Kathmandu Heritage" loading="lazy"></div>
+                    <div class="tour-card-body">
+                        <span class="tour-duration"><i class="fa-regular fa-calendar-days"></i> 5 Days</span>
+                        <h3>Kathmandu Valley Heritage Walk</h3>
+                        <div class="tour-features">
+                            <span class="tour-feature"><i class="fa-solid fa-place-of-worship"></i> Temples</span>
+                            <span class="tour-feature"><i class="fa-solid fa-landmark"></i> UNESCO</span>
+                            <span class="tour-feature"><i class="fa-solid fa-bowl-food"></i> Food Tour</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">$135 <small>/person</small></div>
+                            <a href="booking.html" class="tour-book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card reveal" data-category="adventure">
+                    <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1585938389612-a552a28d6914?w=400&q=80" alt="Pokhara Adventure" loading="lazy"></div>
+                    <div class="tour-card-body">
+                        <span class="tour-duration"><i class="fa-regular fa-calendar-days"></i> 7 Days</span>
+                        <h3>Pokhara Adventure Package</h3>
+                        <div class="tour-features">
+                            <span class="tour-feature"><i class="fa-solid fa-parachute-box"></i> Paragliding</span>
+                            <span class="tour-feature"><i class="fa-solid fa-sailboat"></i> Boating</span>
+                            <span class="tour-feature"><i class="fa-solid fa-sun"></i> Sunrise</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">$190 <small>/person</small></div>
+                            <a href="booking.html" class="tour-book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card reveal" data-category="trekking">
+                    <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400&q=80" alt="Annapurna Circuit" loading="lazy"></div>
+                    <div class="tour-card-body">
+                        <span class="tour-duration"><i class="fa-regular fa-calendar-days"></i> 18 Days</span>
+                        <h3>Annapurna Circuit Trek</h3>
+                        <div class="tour-features">
+                            <span class="tour-feature"><i class="fa-solid fa-person-hiking"></i> Trekking</span>
+                            <span class="tour-feature"><i class="fa-solid fa-mountain"></i> 5,416m</span>
+                            <span class="tour-feature"><i class="fa-solid fa-hot-tub-person"></i> Hot Springs</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">$415 <small>/person</small></div>
+                            <a href="booking.html" class="tour-book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card reveal" data-category="spiritual">
+                    <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=400&q=80" alt="Buddhist Circuit" loading="lazy"></div>
+                    <div class="tour-card-body">
+                        <span class="tour-duration"><i class="fa-regular fa-calendar-days"></i> 8 Days</span>
+                        <h3>Buddhist Pilgrimage Trail</h3>
+                        <div class="tour-features">
+                            <span class="tour-feature"><i class="fa-solid fa-spa"></i> Meditation</span>
+                            <span class="tour-feature"><i class="fa-solid fa-place-of-worship"></i> Monasteries</span>
+                            <span class="tour-feature"><i class="fa-solid fa-peace"></i> Peace</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">$165 <small>/person</small></div>
+                            <a href="booking.html" class="tour-book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card reveal" data-category="adventure">
+                    <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1560703650-ef3e0f254ae0?w=400&q=80" alt="Chitwan Safari" loading="lazy"></div>
+                    <div class="tour-card-body">
+                        <span class="tour-duration"><i class="fa-regular fa-calendar-days"></i> 4 Days</span>
+                        <h3>Chitwan Jungle Safari</h3>
+                        <div class="tour-features">
+                            <span class="tour-feature"><i class="fa-solid fa-binoculars"></i> Safari</span>
+                            <span class="tour-feature"><i class="fa-solid fa-hippo"></i> Wildlife</span>
+                            <span class="tour-feature"><i class="fa-solid fa-masks-theater"></i> Tharu Dance</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">$115 <small>/person</small></div>
+                            <a href="booking.html" class="tour-book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fa-solid fa-images"></i> Gallery</span>
+                <h2 class="section-title">Nepal Through Our Lens</h2>
+                <p class="section-desc">Moments captured by our yatris across the landscapes of Nepal</p>
+            </div>
+            <div class="gallery-grid reveal" id="galleryGrid">
+                <div class="gallery-item" data-index="0"><img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80" alt="Prayer flags mountains" loading="lazy"><div class="gallery-overlay"><span>Prayer Flags, Annapurna</span></div></div>
+                <div class="gallery-item" data-index="1"><img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=600&q=80" alt="Boudhanath Stupa" loading="lazy"><div class="gallery-overlay"><span>Boudhanath, Kathmandu</span></div></div>
+                <div class="gallery-item" data-index="2"><img src="https://images.unsplash.com/photo-1585938389612-a552a28d6914?w=600&q=80" alt="Phewa Lake" loading="lazy"><div class="gallery-overlay"><span>Phewa Lake, Pokhara</span></div></div>
+                <div class="gallery-item" data-index="3"><img src="https://images.unsplash.com/photo-1486911278844-a81c5267e227?w=600&q=80" alt="Himalayan trail" loading="lazy"><div class="gallery-overlay"><span>Himalayan Trail</span></div></div>
+                <div class="gallery-item" data-index="4"><img src="https://images.unsplash.com/photo-1558799401-1dcba79834c2?w=600&q=80" alt="Durbar Square" loading="lazy"><div class="gallery-overlay"><span>Durbar Square</span></div></div>
+                <div class="gallery-item" data-index="5"><img src="https://images.unsplash.com/photo-1570804489740-88d6bc4d1c6a?w=600&q=80" alt="Bhaktapur" loading="lazy"><div class="gallery-overlay"><span>Bhaktapur</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fa-solid fa-comments"></i> Yatri Stories</span>
+                <h2 class="section-title">What Our Yatris Say</h2>
+                <p class="section-desc">Heartfelt reviews from travelers who experienced Nepal with us</p>
+            </div>
+            <div class="testimonials-wrapper reveal">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <blockquote>Nepal changed my life. The Everest Base Camp trek was the hardest and most beautiful thing I've ever done. Yatra Nepal's guides were incredible — they knew every trail, every teahouse, every story behind every mountain. I left a tourist and came back a yatri.</blockquote>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Rajesh Kumar" class="testimonial-avatar">
+                            <div class="testimonial-info"><h4>Rajesh Kumar</h4><p>Everest Base Camp Trek</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <blockquote>I came for Pokhara's beauty but fell in love with the Nepali people. The paragliding over Phewa Lake, the sunrise at Sarangkot, the momos at lakeside — every moment was perfect. Yatra Nepal arranged everything flawlessly. Already planning my return!</blockquote>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Anisha Thapa" class="testimonial-avatar">
+                            <div class="testimonial-info"><h4>Anisha Thapa</h4><p>Pokhara Adventure Package</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <blockquote>The Buddhist Pilgrimage trail was a transformative experience. From Boudhanath's peaceful prayers to Lumbini's serene gardens, I found the inner peace I was looking for. The cultural depth and spiritual energy of Nepal is unmatched anywhere in the world.</blockquote>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Maria Santos" class="testimonial-avatar">
+                            <div class="testimonial-info"><h4>Maria Santos</h4><p>Buddhist Pilgrimage Trail</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" id="prevTest"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="testimonial-dots" id="testimonialDots"></div>
+                    <button class="testimonial-btn" id="nextTest"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Banner -->
+    <section class="culture-banner">
+        <div class="container reveal">
+            <div class="culture-content">
+                <h2><i class="fa-solid fa-dharmachakra"></i> Nepal — Where Every Festival is a Celebration of Life</h2>
+                <p>Dashain, Tihar, Holi, Indra Jatra, Bisket Jatra, Teej, Chhath — Nepal celebrates over 50 festivals throughout the year. Visit during any season and experience the warmth, color, and joy of Nepali traditions firsthand.</p>
+                <a href="about.html" class="btn btn-primary">Explore Our Culture <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top-pattern"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><i class="fa-solid fa-mountain-sun footer-logo-icon"></i> Yatra<span>Nepal</span></h3>
+                    <p class="footer-nepali">यात्रा नेपाल — नेपालको सुन्दरता अनुभव गर्नुहोस्</p>
+                    <p>Your trusted partner for authentic Nepal travel experiences. Locally owned, globally loved, culturally rooted.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="destinations.html"><i class="fa-solid fa-chevron-right"></i> Destinations</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="booking.html"><i class="fa-solid fa-chevron-right"></i> Book a Yatra</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Top Destinations</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Kathmandu Valley</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Pokhara</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Everest Region</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Chitwan</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Lumbini</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Upper Mustang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> Thamel, Kathmandu, Nepal</li>
+                        <li><i class="fa-solid fa-phone"></i> +977-1-4441234</li>
+                        <li><i class="fa-solid fa-envelope"></i> namaste@yatranepal.com</li>
+                        <li><i class="fa-solid fa-clock"></i> Sun-Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yatra Nepal. All rights reserved. | Regd. with Nepal Tourism Board</p>
+                <p><i class="fa-solid fa-heart" style="color:var(--primary);"></i> Made with love in Nepal</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+        <img src="" alt="Gallery view" id="lightboxImg">
+        <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

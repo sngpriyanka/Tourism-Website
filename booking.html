@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Yatra | Yatra Nepal</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="prayer-flags">
+      <span class="flag blue"></span><span class="flag white"></span
+      ><span class="flag red"></span><span class="flag green"></span
+      ><span class="flag yellow"></span><span class="flag blue"></span
+      ><span class="flag white"></span><span class="flag red"></span
+      ><span class="flag green"></span><span class="flag yellow"></span
+      ><span class="flag blue"></span><span class="flag white"></span
+      ><span class="flag red"></span><span class="flag green"></span
+      ><span class="flag yellow"></span>
+    </div>
+    <nav class="navbar scrolled" id="navbar">
+      <div class="container">
+        <a href="index.html" class="nav-logo"
+          ><div class="logo-icon">
+            <svg viewBox="0 0 40 50" width="32" height="40">
+              <polygon points="0,50 20,0 20,30 40,20 40,50" fill="#C0392B" />
+              <polygon points="0,50 20,15 20,38 40,30 40,50" fill="#1a237e" />
+              <circle cx="14" cy="22" r="4" fill="#fff" />
+              <path
+                d="M10,38 Q14,32 18,38"
+                fill="none"
+                stroke="#fff"
+                stroke-width="1.5"
+              />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main">Yatra<span>Nepal</span></span
+            ><span class="logo-nepali">यात्रा नेपाल</span>
+          </div></a
+        >
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="booking.html" class="nav-cta active"
+              ><i class="fa-solid fa-suitcase-rolling"></i> Book Yatra</a
+            >
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <section class="page-header page-header-booking">
+      <div class="container">
+        <div class="page-header-content">
+          <h1><i class="fa-solid fa-route"></i> Book Your Yatra</h1>
+          <p>
+            Fill in the details and we'll craft your perfect Nepal itinerary
+          </p>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a><span>/</span><span>Booking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section">
+      <div class="container">
+        <div class="booking-wrapper">
+          <div class="booking-steps">
+            <div class="step active" data-step="1">
+              <div class="step-number">1</div>
+              <span>Your Info</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="2">
+              <div class="step-number">2</div>
+              <span>Yatra Details</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="3">
+              <div class="step-number">3</div>
+              <span>Confirm</span>
+            </div>
+          </div>
+
+<form id="bookingForm" class="booking-form"
+      action="https://formspree.io/f/xjgazbny" method="POST" novalidate>
+    <!-- STEP 1 - Personal Info (KEEP name attributes on inputs - these are correct) -->
+    <div class="form-step active" id="formStep1">
+        <h3><i class="fa-solid fa-user"></i> Personal Information</h3>
+        <p class="step-desc">Tell us about yourself so we can personalize your Nepal experience</p>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="bookFirstName">First Name *</label>
+                <input type="text" id="bookFirstName" name="firstName" placeholder="Ram" required>
+                <span class="error-msg">Required</span>
+            </div>
+            <div class="form-group">
+                <label for="bookLastName">Last Name *</label>
+                <input type="text" id="bookLastName" name="lastName" placeholder="Sharma" required>
+                <span class="error-msg">Required</span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="bookEmail">Email *</label>
+                <input type="email" id="bookEmail" name="email" placeholder="ram@email.com" required>
+                <span class="error-msg">Valid email required</span>
+            </div>
+            <div class="form-group">
+                <label for="bookPhone">Phone *</label>
+                <input type="tel" id="bookPhone" name="phone" placeholder="+977-98XXXXXXXX" required>
+                <span class="error-msg">Required</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bookCountry">Country</label>
+            <select id="bookCountry" name="country">
+                <option value="">Select country</option>
+                <option>Nepal</option>
+                <option>India</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Australia</option>
+                <option>China</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Japan</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <!-- Hidden field to identify form type -->
+        <input type="hidden" name="_subject" value="New Booking from Yatra Nepal">
+        <input type="hidden" name="form_type" value="Booking Request">
+
+        <div class="form-nav">
+            <span></span>
+            <button type="button" class="btn btn-primary next-step" data-next="2">
+                Next Step <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- STEP 2 - Yatra Details (KEEP name attributes on inputs) -->
+    <div class="form-step" id="formStep2">
+        <h3><i class="fa-solid fa-mountain-sun"></i> Yatra Details</h3>
+        <p class="step-desc">Tell us about your dream Nepal adventure</p>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="bookDestination">Destination *</label>
+                <select id="bookDestination" name="destination" required>
+                    <option value="">Choose destination</option>
+                    <option>Kathmandu Valley</option>
+                    <option>Pokhara</option>
+                    <option>Everest Base Camp Trek</option>
+                    <option>Annapurna Circuit Trek</option>
+                    <option>Chitwan Safari</option>
+                    <option>Lumbini Pilgrimage</option>
+                    <option>Upper Mustang</option>
+                    <option>Langtang Valley Trek</option>
+                    <option>Bhaktapur Heritage</option>
+                    <option>Custom Itinerary</option>
+                </select>
+                <span class="error-msg">Select destination</span>
+            </div>
+            <div class="form-group">
+                <label for="bookTripType">Trip Type</label>
+                <select id="bookTripType" name="tripType">
+                    <option>Trekking</option>
+                    <option>Cultural Heritage</option>
+                    <option>Adventure Sports</option>
+                    <option>Wildlife Safari</option>
+                    <option>Spiritual Pilgrimage</option>
+                    <option>Honeymoon</option>
+                    <option>Family Trip</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="bookStartDate">Start Date *</label>
+                <input type="date" id="bookStartDate" name="startDate" required>
+                <span class="error-msg">Select date</span>
+            </div>
+            <div class="form-group">
+                <label for="bookEndDate">End Date</label>
+                <input type="date" id="bookEndDate" name="endDate">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="bookTravelers">Travelers</label>
+                <select id="bookTravelers" name="travelers">
+                    <option>1 Person</option>
+                    <option>2 People</option>
+                    <option>3-5 People</option>
+                    <option>6-10 People</option>
+                    <option>11+ (Group)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bookBudget">Budget (per person)</label>
+                <select id="bookBudget" name="budget">
+                    <option>Under $100</option>
+                    <option>$100 - $250</option>
+                    <option>$250 - $500</option>
+                    <option>$500 - $1,000</option>
+                    <option>$1,000+</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bookNotes">Special Requests</label>
+            <textarea id="bookNotes" name="specialRequests" rows="4"
+                placeholder="Dietary needs, fitness level, specific interests..."></textarea>
+        </div>
+        <div class="form-nav">
+            <button type="button" class="btn btn-dark prev-step" data-prev="1">
+                <i class="fa-solid fa-arrow-left"></i> Previous
+            </button>
+            <button type="button" class="btn btn-primary next-step" data-next="3">
+                Review <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- STEP 3 - Review (NO name attributes on spans - they are display only) -->
+    <div class="form-step" id="formStep3">
+        <h3><i class="fa-solid fa-clipboard-check"></i> Review & Confirm</h3>
+        <p class="step-desc">Verify your details before submitting</p>
+        <div class="review-card">
+            <div class="review-section">
+                <h4><i class="fa-solid fa-user"></i> Personal Info</h4>
+                <div class="review-grid">
+                    <div>
+                        <span class="review-label">Name</span>
+                        <span class="review-value" id="reviewName">-</span>
+                    </div>
+                    <div>
+                        <span class="review-label">Email</span>
+                        <span class="review-value" id="reviewEmail">-</span>
+                    </div>
+                    <div>
+                        <span class="review-label">Phone</span>
+                        <span class="review-value" id="reviewPhone">-</span>
+                    </div>
+                    <div>
+                        <span class="review-label">Country</span>
+                        <span class="review-value" id="reviewCountry">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <h4><i class="fa-solid fa-mountain-sun"></i> Yatra Details</h4>
+                <div class="review-grid">
+                    <div>
+                        <span class="review-label">Destination</span>
+                        <span class="review-value" id="reviewDest">-</span>
+                    </div>
+                    <div>
+                        <span class="review-label">Trip Type</span>
+                        <span class="review-value" id="reviewType">-</span>
+                    </div>
+                    <div>
+                        <span class="review-label">Dates</span>
+                        <span class="review-value" id="reviewDates">-</span>
+                    </div>
+                    <div>
+                        <span class="review-label">Travelers</span>
+                        <span class="review-value" id="reviewTravelers">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" style="margin-top: 20px">
+            <label class="checkbox-label">
+                <input type="checkbox" id="agreeTerms" required>
+                <span>I agree to the <a href="#" style="color: var(--primary)">Terms & Conditions</a></span>
+            </label>
+        </div>
+        <div class="form-nav">
+            <button type="button" class="btn btn-dark prev-step" data-prev="2">
+                <i class="fa-solid fa-arrow-left"></i> Previous
+            </button>
+<button type="button" class="btn btn-primary" id="confirmBookingBtn">
+    Confirm Booking <i class="fa-solid fa-check"></i>
+</button>
+        </div>
+    </div>
+</form>
+
+          <div
+            class="booking-success"
+            id="bookingSuccess"
+            style="display: none"
+          >
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <h2>धन्यवाद! Booking Submitted!</h2>
+            <p>
+              Thank you for choosing Yatra Nepal. Our team will review your
+              request and send a custom itinerary within 24 hours.
+            </p>
+            <p><strong>Confirmation will be sent to your email.</strong></p>
+            <a href="index.html" class="btn btn-primary"
+              >Back to Home <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-top-pattern"></div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>
+              <i class="fa-solid fa-mountain-sun footer-logo-icon"></i>
+              Yatra<span>Nepal</span>
+            </h3>
+            <p>Authentic Nepal travel experiences.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-chevron-right"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="destinations.html"
+                  ><i class="fa-solid fa-chevron-right"></i> Destinations</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fa-solid fa-chevron-right"></i> About</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa-solid fa-chevron-right"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i> Thamel, Kathmandu
+              </li>
+              <li><i class="fa-solid fa-phone"></i> +977-1-4441234</li>
+              <li>
+                <i class="fa-solid fa-envelope"></i> namaste@yatranepal.com
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow</h4>
+            <div class="footer-socials">
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-facebook-f"></i></a
+              ><a href="#" class="social-link"
+                ><i class="fa-brands fa-instagram"></i></a
+              ><a href="#" class="social-link"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Yatra Nepal.</p>
+          <p>
+            <i class="fa-solid fa-heart" style="color: var(--primary)"></i> Made
+            with love in Nepal
+          </p>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

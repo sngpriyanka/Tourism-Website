@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Yatra Nepal</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="prayer-flags">
+      <span class="flag blue"></span><span class="flag white"></span
+      ><span class="flag red"></span><span class="flag green"></span
+      ><span class="flag yellow"></span><span class="flag blue"></span
+      ><span class="flag white"></span><span class="flag red"></span
+      ><span class="flag green"></span><span class="flag yellow"></span
+      ><span class="flag blue"></span><span class="flag white"></span
+      ><span class="flag red"></span><span class="flag green"></span
+      ><span class="flag yellow"></span>
+    </div>
+    <nav class="navbar scrolled" id="navbar">
+      <div class="container">
+        <a href="index.html" class="nav-logo"
+          ><div class="logo-icon">
+            <svg viewBox="0 0 40 50" width="32" height="40">
+              <polygon points="0,50 20,0 20,30 40,20 40,50" fill="#C0392B" />
+              <polygon points="0,50 20,15 20,38 40,30 40,50" fill="#1a237e" />
+              <circle cx="14" cy="22" r="4" fill="#fff" />
+              <path
+                d="M10,38 Q14,32 18,38"
+                fill="none"
+                stroke="#fff"
+                stroke-width="1.5"
+              />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main">Yatra<span>Nepal</span></span
+            ><span class="logo-nepali">यात्रा नेपाल</span>
+          </div></a
+        >
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li>
+            <a href="booking.html" class="nav-cta"
+              ><i class="fa-solid fa-suitcase-rolling"></i> Book Yatra</a
+            >
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <section class="page-header page-header-contact">
+      <div class="container">
+        <div class="page-header-content">
+          <h1><i class="fa-solid fa-headset"></i> Contact Us</h1>
+          <p>Our team in Kathmandu is ready to help plan your Nepal yatra</p>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a><span>/</span><span>Contact</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3><i class="fa-solid fa-hands-praying"></i> नमस्ते!</h3>
+            <p>
+              Reach out and our Kathmandu team will respond within 24 hours.
+            </p>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4>Our Office</h4>
+                <p>Thamel Marg, Ward 26<br />Kathmandu 44600, Nepal</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>namaste@yatranepal.com<br />info@yatranepal.com</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone / WhatsApp</h4>
+                <p>+977-1-4441234<br />+977-9841234567</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4>Office Hours</h4>
+                <p>Sun-Fri: 9AM - 6PM<br />Saturday: Closed (शनिबार बिदा)</p>
+              </div>
+            </div>
+            <div class="footer-socials" style="margin-top: 25px">
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-facebook-f"></i></a
+              ><a href="#" class="social-link"
+                ><i class="fa-brands fa-instagram"></i></a
+              ><a href="#" class="social-link"
+                ><i class="fa-brands fa-youtube"></i></a
+              ><a href="#" class="social-link"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <h3>Send Us a Message</h3>
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/xjgazbny"
+              method="POST"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label
+                  ><input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Ram"
+                    required
+                  /><span class="error-msg">Required</span>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label
+                  ><input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Sharma"
+                    required
+                  /><span class="error-msg">Required</span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactEmail">Email *</label
+                  ><input
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    placeholder="ram@email.com"
+                    required
+                  /><span class="error-msg">Valid email required</span>
+                </div>
+                <div class="form-group">
+                  <label for="contactPhone">Phone</label
+                  ><input
+                    type="tel"
+                    id="contactPhone"
+                    name="phone"
+                    placeholder="+977-98XXXXXXXX"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactSubject">Inquiry About</label
+                ><select id="contactSubject" name="subject">
+                  <option value="">Select a topic</option>
+                  <option>Trekking Package</option>
+                  <option>Cultural Tour</option>
+                  <option>Custom Itinerary</option>
+                  <option>Group Booking</option>
+                  <option>General Question</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Your Message *</label
+                ><textarea
+                  id="contactMessage"
+                  name="message"
+                  placeholder="Tell us about your dream Nepal trip..."
+                  rows="5"
+                  required
+                ></textarea
+                ><span class="error-msg">Required</span>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%; justify-content: center"
+              >
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"
+            ><i class="fa-solid fa-circle-question"></i> FAQs</span
+          >
+          <h2 class="section-title">Common Questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Do I need a visa to visit Nepal?<span class="faq-toggle"
+                ><i class="fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Most nationalities can get a visa on arrival at Tribhuvan
+                International Airport. Tourist visas are available for 15, 30,
+                or 90 days. Indian nationals don't need a visa.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              What is the best time to visit Nepal?<span class="faq-toggle"
+                ><i class="fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                October-November (autumn) offers the best trekking weather.
+                March-May (spring) is great for rhododendron blooms. Monsoon
+                (June-August) is ideal for rafting.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              What currency do you accept?<span class="faq-toggle"
+                ><i class="fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Our prices are listed in USD for international travelers'
+                convenience. We accept USD, major credit cards, and bank
+                transfers. Local expenses in Nepal use Nepalese Rupees (NPR).
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              How fit do I need to be for trekking?<span class="faq-toggle"
+                ><i class="fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                It depends on the trek. Poon Hill is suitable for beginners,
+                while Everest Base Camp requires moderate fitness. We offer
+                treks for all levels.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Do you provide travel insurance?<span class="faq-toggle"
+                ><i class="fa-solid fa-plus"></i
+              ></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We strongly recommend travel insurance with helicopter
+                evacuation coverage for treks above 3,000m. Insurance is
+                mandatory for high-altitude treks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-top-pattern"></div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>
+              <i class="fa-solid fa-mountain-sun footer-logo-icon"></i>
+              Yatra<span>Nepal</span>
+            </h3>
+            <p>Authentic Nepal travel since 2014.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-chevron-right"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="destinations.html"
+                  ><i class="fa-solid fa-chevron-right"></i> Destinations</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fa-solid fa-chevron-right"></i> About</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa-solid fa-chevron-right"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i> Thamel, Kathmandu
+              </li>
+              <li><i class="fa-solid fa-phone"></i> +977-1-4441234</li>
+              <li>
+                <i class="fa-solid fa-envelope"></i> namaste@yatranepal.com
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow</h4>
+            <div class="footer-socials">
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-facebook-f"></i></a
+              ><a href="#" class="social-link"
+                ><i class="fa-brands fa-instagram"></i></a
+              ><a href="#" class="social-link"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Yatra Nepal.</p>
+          <p>
+            <i class="fa-solid fa-heart" style="color: var(--primary)"></i> Made
+            with love in Nepal
+          </p>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
