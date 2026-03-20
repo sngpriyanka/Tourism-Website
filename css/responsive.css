@@ -1,0 +1,75 @@
+/* ===========================================
+   YATRA NEPAL - RESPONSIVE STYLES
+   =========================================== */
+
+@media (max-width: 1024px) {
+    .hero h1 { font-size: 2.8rem; }
+    .intro-grid { gap: 35px; }
+    .exp-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 180px); }
+    .gallery-item:nth-child(1), .gallery-item:nth-child(4) { grid-row: span 1; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-grid { gap: 35px; }
+}
+
+@media (max-width: 768px) {
+    .hamburger { display: flex; }
+    .nav-links { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: var(--white); flex-direction: column; padding: 80px 30px 30px; gap: 16px; box-shadow: -5px 0 30px rgba(0,0,0,.1); transition: var(--transition); z-index: 999; }
+    .nav-links.active { right: 0; }
+    .nav-links a { color: var(--text) !important; font-size: 1rem; }
+    .nav-links a:hover { color: var(--primary) !important; }
+    .hero { padding: 130px 0 80px; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero-stats { gap: 20px; flex-wrap: wrap; }
+    .hero-stat h3 { font-size: 1.5rem; }
+    .hero-scroll { display: none; }
+    .mountain-silhouette svg { height: 50px; }
+    section { padding: 60px 0; }
+    .section-title { font-size: 1.8rem; }
+    .intro-grid { grid-template-columns: 1fr; }
+    .intro-img-secondary { left: auto; right: 10px; bottom: -15px; }
+    .intro-float-card { right: auto; left: 10px; top: auto; bottom: -15px; }
+    .dest-grid { grid-template-columns: 1fr; }
+    .exp-grid { grid-template-columns: 1fr; }
+    .tours-grid { grid-template-columns: 1fr; }
+    .tour-card { flex-direction: column; }
+    .tour-card-img { width: 100%; min-height: 180px; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, 150px); }
+    .testimonial-card { padding: 30px 20px; }
+    .newsletter-form { flex-direction: column; }
+    .contact-wrapper { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-float-badge { bottom: -12px; right: 10px; }
+    .why-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; gap: 5px; text-align: center; }
+    .page-header { padding: 120px 0 50px; }
+    .page-header h1 { font-size: 2rem; }
+    .filter-bar { flex-direction: column; }
+    .filter-search { width: 100%; }
+    .filter-group { width: 100%; }
+    .filter-group select { width: 100%; }
+    .booking-steps { flex-wrap: wrap; gap: 5px; }
+    .step-line { width: 35px; }
+    .form-step { padding: 24px 18px; }
+    .form-nav { flex-direction: column; gap: 10px; }
+    .form-nav .btn { width: 100%; justify-content: center; }
+    .review-grid { grid-template-columns: 1fr; }
+    .culture-banner::before { display: none; }
+}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.8rem; }
+    .hero-buttons { flex-direction: column; }
+    .hero-stats { flex-direction: column; gap: 12px; }
+    .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .gallery-item { height: 180px; }
+    .team-grid { grid-template-columns: 1fr; }
+    .about-highlights { flex-direction: column; }
+    .step span { display: none; }
+    .toast { min-width: auto; max-width: 90vw; }
+}
